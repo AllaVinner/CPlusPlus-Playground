@@ -17,6 +17,8 @@ int main(void)
     {
         printf("%c*", string[i]);
     }
+
+
 }
 
 
