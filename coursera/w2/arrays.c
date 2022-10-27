@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+double average(int array[], int size)
+{
+    int sum = 0;
+    for (int i = 0; i < size; ++i)
+    {
+        sum += array[i];
+    }
+    return (double) sum / size;
+}
+
 int main(void)
 {
     // Len must be known at compile time
@@ -18,6 +28,9 @@ int main(void)
         printf("%c*", string[i]);
     }
 
+    int arr [] = {1,2,5,3,2};
+    double avg = average(arr, 5);
+    printf("\nAverage is: %lf", avg);
 
 }
 
