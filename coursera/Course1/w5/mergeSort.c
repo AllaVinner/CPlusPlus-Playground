@@ -44,7 +44,7 @@ void print_list(int l[], int len)
 
 void sort(int a [], int len)
 {
-    if (len == 1)
+    if (len <= 1)
         return;
     int len0 = len / 2;
     int len1 = len - len0;
