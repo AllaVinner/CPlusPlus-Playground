@@ -1,11 +1,28 @@
 #include<stdio.h>
-#define PI 3.14159
+
+struct  data
+{
+    int a;
+    int b;
+    double dd;
+    double ddd;
+};
+
+double sum(struct data d)
+{
+    d.a = 99;
+    return d.a + d.b + d.dd + d.ddd;
+}
+
 
 int main(void)
 { 
-    int radius;
-    printf("Enter radius:");
-    scanf("%d", &radius);
-    printf("volume is : %lf \n\n", 4*PI*radius*radius*radius/3. );
+    struct data d;
+    d.a = 1;
+    d.b = 2;
+    d.dd = 3.141;
+    d.ddd = 2.781;
+    printf("Size of data %d\n", sum(d));
+    printf("Size of data %d\n", d.a);
     return 0;
 }

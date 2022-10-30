@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct 
+
+int main(void)
+{   
+    List* head;
+    add_elements(4, head);
+    printList(head);
+    bubbleSort(head);
+    printList(head);
+    return 0;
+}
